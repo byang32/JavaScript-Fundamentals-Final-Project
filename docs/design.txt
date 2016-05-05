@@ -1,0 +1,145 @@
+PROBLEM STATEMENT: Create a program thats ask the user to input a selection using a number one through four. 
+                   The numbers should correspond with check balance, deposit, withdrawal and exit . If number isnt one 
+                   through four enter alert the user "Not a valid selection". Based on the selection that is made
+                   the program should prompt user add or subtract an amount from the balance and calculate an 
+                   updated balance.
+                    
+Nouns: number, one through four, check balance, deposit, withdrawal, exit
+
+Verbs: prompt, alert, add, subtract, calculate
+
+
+
+Defining Diagram:
+
+INPUTS:     prompt
+            user selction
+            prompt amount
+
+PROCESSING: alert amount added
+            calculate amount
+            
+OUTPUTS:    check balance
+            balance updated
+            
+
+
+
+PSEUDOCODE: Intialize amount to 0
+            Intialize exit
+            Intialize looping to true
+            Intialize userSelection
+            Intialize currentBalance to 1000
+            Intialize balanceDifference to 0
+       
+            WHILE (loop = TRUE)
+             PROMPT userSelection
+             
+             SWITCH(Number(userSelection))THEN
+              case 1:
+                checkBalance()
+                break
+              case 2:
+                deposit()
+                break;
+              case 3:
+                withdrawal()
+                break
+              case 4:
+                stopLooping()
+              default:
+                ALERT(Not a valid selection)
+            
+            IF userselection TRUE THEN
+            CALL function()
+             ALERT("How much to deposit")
+             userinput = amount
+             ALERT("Deposit Amout: ") THEN
+            
+            CALCULATE currentBalance+= amount THEN
+            PROMPT userSelection
+            userSelection checkBalance
+            END IF
+             ALERT checkBalance
+             OUTPUT updated checkBalance
+            END
+   
+   
+TEST CASE 1:
+
+INPUT VALUES: 1
+
+EXPECTED RESULST: Your current balance 1000
+
+ACTUAL RESULST: Your current balance 1000    
+            
+            
+TEST CASE 2:
+
+INPUT VALUES: 2, 200, 1
+
+EXPECTED RESULST: Your current balance 1200
+
+ACTUAL RESULST: Your current balance 1200
+
+
+TEST CASE 3:
+
+INPUT VALUES: 3, 500, 1
+
+EXPECTED RESULST: Your current balance 500
+
+ACTUAL RESULST: Your current balance 500
+
+
+TEST CASE 4:
+
+INPUT VALUES: 3, 1500, 1
+
+EXPECTED RESULST: Your current balance -500
+
+ACTUAL RESULST: Your current balance -500
+
+
+TEST CASE 5: 
+
+INPUT VALUES: 1
+
+EXPECTED RESULST: Your current balance 1000
+
+ACTUAL RESULST: Your current balance 1000
+
+        
+TEST CASE 6: 
+
+INPUT VALUES: 2, 1000, 1
+
+EXPECTED RESULST: Your current balance 2000
+
+ACTUAL RESULST: Your current balance 2000
+
+
+TEST CASE 7:
+
+INPUT VALUES: 1234
+
+EXPECTED RESULST: Not a valid selction
+
+ACTUAL RESULST: Not a valid selction
+
+
+TEST CASE 8:
+
+INPUT VALUES: asdf
+
+EXPECTED RESULST: Not a valid selction
+
+ACTUAL RESULST: Not a valid selction       
+
+
+
+        
+            
+             
+                
+   
